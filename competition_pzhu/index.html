@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="down" class="down">
+			<img src="img/down.png" />
+		</div>
+		<div id="up" class="down">
+			<img src="img/up.png" />
+		</div>
+		<div id="topbarid" class="topbar">
+			<div class="left">
+				<ul>
+					<li>
+						<div class="logo">
+							<img src="img/gh.png" />
+						</div>
+					</li>
+					<li>
+						<a href="http://www.cctv.com/">中央网</a>
+					</li>
+					<li>
+						<a href="page/main.html">小站</a>
+					</li>
+					<li>
+						<a href="page/Chairman.html">我们的主席</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+
+			</div>
+		</div>
+		<div class="one">
+
+			<!--<div class="oneone">
+			</div>-->
+		</div>
+		<div class="two">
+			<h1></h1>
+			<div id="twooneid" class="twoone">
+
+			</div>
+		</div>
+		<div class="three">
+			<div class="threeone">
+				<span class="threeonefont">
+					新中国成立70周年<br />
+					今年有哪些国家大事？
+				</span>
+				<p>今年是新中国成立70周年，也是全面建成小康社会关键之年，
+					<br />包括第二届“一带一路”国际合作高峰论坛，新个税法实施等等，
+					<br />一系列国家大事和民生关切，让新的一年备受期待。</p>
+				<a href="http://www.cnr.cn/shanghai/tt/20190101/t20190101_524467716.shtml">了解更多 ></a>
+			</div>
+			<div class="threetwo">
+				<img src="img/qi.PNG" />
+			</div>
+		</div>
+		<div class="four">
+
+		</div>
+		<div class="three">
+			<div class="threeone">
+				<span class="threeonefont">
+					牵挂与惦念——习近平总书记<br />
+					赴重庆华溪村扶贫考察纪实。
+				</span>
+				<p>这是一场和平时期的宏大战役,这是一次举世瞩目的中国行动。
+					<br />党的十八大以来，中国贫困人口减少8000多万 。
+					<br />全面打赢脱贫攻坚战进入决战决胜的倒计时，关键阶段响鼓重锤。</p>
+				<a href="http://news.cctv.com/2019/04/18/ARTIurvJE8Z6VxarPDBX2BQL190418.shtml?spm=C96370.PsikHJQ1ICOX.Em32AuyOHUeL.11">了解更多 ></a>
+			</div>
+			<div class="threetwo">
+				<embed id='v_player_cctv' width='450' height='300' flashvars='videoId=null&filePath=&isAutoPlay=true&url=http://news.cctv.com/2019/04/18/ARTIurvJE8Z6VxarPDBX2BQL190418.shtml?spm=C96370.PsikHJQ1ICOX.Em32AuyOHUeL.11&tai=news&configPath=http://js.player.cntv.cn/xml/config/outside.xml&widgetsConfig=http://js.player.cntv.cn/xml/widgetsConfig/common.xml&languageConfig=&hour24DataURL=VodCycleData.xml&outsideChannelId=channelBugu&videoCenterId=1d351190efa693d8e6c66c0bd28d3b84' allowscriptaccess='always' allowfullscreen='true' menu='false' quality='best' bgcolor='#000000' name='v_player_cctv' src='http://player.cntv.cn/standard/cntvOutSidePlayer.swf' type='application/x-shockwave-flash' lk_mediaid='lk_juiceapp_mediaPopup_1257416656250' lk_media='yes' />
+			</div>
+		</div>
+		<div class="five">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		//		var a = $("#twoone").position().top;
+		//		var b = $("body").scrollLeft();
+		$(document).scroll(function() {     
+			var scroH = $(document).scrollTop(); //滚动高度
+			var bg = $("#topbarid");      
+			if(scroH >= 870) {
+				bg.css("position", "fixed");
+			} else {
+				bg.css("position", "");
+			}
+			if(scroH >= 1080) {
+				$("#down").css("display", "none");
+				//				$("#up").css("display","inline");
+			} else {
+				//				$("#down").css("display","inline");
+				//				$("#up").css("display","none");
+			}
+		});
+	</script>
+
+</html>
